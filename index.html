@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>氣候變遷入口平台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  background: #F2F4F8;
+}
+
+header {
+  background: linear-gradient(135deg, #0B3C5D, #1F4E79);
+  color: white;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 50px;
+  padding: 80px 60px;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.card ul {
+  margin-top: 15px;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.card-footer a {
+  padding: 10px 18px;
+  background: #0B3C5D;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.card-footer a:hover {
+  background: #D4A24C;
+}
+
+.card-footer img {
+  max-height: 45px;
+  object-fit: contain;
+}
+
+footer {
+  background: #0B3C5D;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>氣候變遷入口平台</h1>
+  <p>整合全國氣候變遷與災害風險相關官方系統</p>
+</header>
+
+<section class="cards">
+
+  <div class="card">
+    <div>
+      <h2>TCCIP 氣候變遷推估資訊平台</h2>
+      <p>由國家災害防救科技中心建置，提供氣候情境推估與風險分析資料。</p>
+      <ul>
+        <li>氣候情境模擬資料</li>
+        <li>衝擊評估與風險圖資</li>
+        <li>調適策略與研究應用</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <a href="https://tccip.ncdr.nat.gov.tw/" target="_blank">前往官方網站 ↗</a>
+      <img src="images/tccip.png" alt="TCCIP Logo">
+    </div>
+  </div>
+
+  <div class="card">
+    <div>
+      <h2>災害風險調適平台（DRA）</h2>
+      <p>提供全國災害風險評估成果與調適政策資訊。</p>
+      <ul>
+        <li>全國災害風險分布圖</li>
+        <li>風險等級分析</li>
+        <li>調適政策參考資料</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <a href="https://dra.ncdr.nat.gov.tw/" target="_blank">前往官方網站 ↗</a>
+      <img src="images/dra.png" alt="DRA Logo">
+    </div>
+  </div>
+
+  <div class="card">
+    <div>
+      <h2>氣候變遷因應政策專區</h2>
+      <p>環境部氣候變遷署之官方政策與減碳措施資訊。</p>
+      <ul>
+        <li>減碳政策與法規</li>
+        <li>氣候治理策略</li>
+        <li>永續轉型行動方案</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <a href="https://www.cca.gov.tw/affairs/response-policies/1999.html" target="_blank">前往官方網站 ↗</a>
+      <img src="images/cca.png" alt="CCA Logo">
+    </div>
+  </div>
+
+  <!-- 未來新增平台可於此處複製 card -->
+
+</section>
+
+<footer>
+© 2026 氣候變遷入口平台
+</footer>
+
+</body>
+</html>

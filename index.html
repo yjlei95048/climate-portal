@@ -9,15 +9,15 @@
     body {
       margin: 0;
       font-family: "Noto Sans TC", Arial, sans-serif;
-      background-color: #f4f6f9;
+      background-color: #ffffff;
       color: #333;
     }
 
-    /* 標題列（資料型） */
+    /* 標題列（資料型子頁） */
     .hero {
       background: #2c4f73;
       color: white;
-      padding: 18px 20px;
+      padding: 20px 20px;
       text-align: left;
     }
 
@@ -29,11 +29,11 @@
 
     .hero p {
       font-size: 13px;
-      opacity: 0.75;
+      opacity: 0.8;
       margin-top: 4px;
     }
 
-    /* 卡片區（可擴充 Grid） */
+    /* 卡片容器（可擴充） */
     .card-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -43,7 +43,7 @@
       padding: 0 20px;
     }
 
-    /* 卡片（資料條目型） */
+    /* 卡片（資料索引型） */
     .card {
       background: #ffffff;
       padding: 20px;
@@ -82,22 +82,35 @@
       text-decoration: underline;
     }
 
-    /* Logo */
     .card img {
       margin-top: 10px;
       max-height: 36px;
       opacity: 0.9;
     }
+
+    /* 子頁維護說明（非版權） */
+    .sub-footer {
+      background: #f4f6f9;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 13px;
+      color: #555;
+      border-top: 1px solid #e3e7eb;
+      margin-top: 40px;
+    }
+
   </style>
 </head>
 
 <body>
 
+  <!-- 子頁標題 -->
   <div class="hero">
     <h1>氣候資料與風險評估資源彙整</h1>
     <p>Climate Data & Risk Assessment Resources</p>
   </div>
 
+  <!-- 內容區 -->
   <div class="card-container">
 
     <!-- TCCIP -->
@@ -145,6 +158,11 @@
       <img src="images/cca.png" alt="CCA Logo">
     </div>
 
+  </div>
+
+  <!-- 子頁維護單位說明 -->
+  <div class="sub-footer">
+    本專區資料彙整與維護單位：國立臺東大學防災科技資訊中心
   </div>
 
 </body>

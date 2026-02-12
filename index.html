@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>氣候資料與風險評估資源彙整</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>氣候資料與風險評估資源索引</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Noto Sans TC", Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-    }
+<style>
 
-    /* 標題列（資料型子頁） */
-    .hero {
-      background: #2c4f73;
-      color: white;
-      padding: 20px 20px;
-      text-align: left;
-    }
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
 
-    .hero h1 {
-      font-size: 20px;
-      font-weight: 600;
-      margin: 0;
-    }
+  /* 讓 footer 貼底 */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    .hero p {
-      font-size: 13px;
-      opacity: 0.8;
-      margin-top: 4px;
-    }
+/* 標題列 */
+.hero {
+  background: #2c4f73;
+  color: white;
+  padding: 22px 40px;
+  text-align: left;
+}
 
-    /* 卡片容器（可擴充） */
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 28px;
-      max-width: 1100px;
-      margin: 45px auto;
-      padding: 0 20px;
-    }
+.hero h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 600;
+}
 
-    /* 卡片（資料索引型） */
-    .card {
-      background: #ffffff;
-      padding: 20px;
-      border: 1px solid #e3e7eb;
-      border-radius: 4px;
-    }
+.hero p {
+  font-size: 15px;
+  margin-top: 6px;
+  opacity: 0.85;
+}
 
-    .card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
+/* 內容撐滿 */
+.main-content {
+  flex: 1;
+}
 
-    .card p {
-      font-size: 14px;
-      margin: 6px 0 10px 0;
-      line-height: 1.5;
-    }
+/* 卡片區 */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 42px;
+  max-width: 1300px;
+  margin: 80px auto;
+  padding: 0 50px;
+}
 
-    .card ul {
-      padding-left: 18px;
-      margin: 0 0 10px 0;
-      font-size: 13px;
-    }
+/* 卡片 */
+.card {
+  background: #ffffff;
+  padding: 34px;
+  border: 1px solid #e3e7eb;
+  border-radius: 6px;
+}
 
-    .card li {
-      margin-bottom: 4px;
-    }
+.card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
 
-    /* 索引式連結 */
-    .card a {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 14px;
-      color: #2c4f73;
-      text-decoration: underline;
-    }
+.card p {
+  font-size: 15px;
+  margin: 6px 0 14px 0;
+  line-height: 1.6;
+}
 
-    .card img {
-      margin-top: 10px;
-      max-height: 36px;
-      opacity: 0.9;
-    }
+.card ul {
+  padding-left: 18px;
+  margin: 0 0 14px 0;
+  font-size: 14px;
+}
 
-    /* 子頁維護說明（非版權） */
-    .sub-footer {
-      background: #f4f6f9;
-      text-align: center;
-      padding: 12px 0;
-      font-size: 13px;
-      color: #555;
-      border-top: 1px solid #e3e7eb;
-      margin-top: 40px;
-    }
+.card li {
+  margin-bottom: 6px;
+}
 
-  </style>
+/* 索引型連結 */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2c4f73;
+  text-decoration: underline;
+}
+
+.card img {
+  margin-top: 18px;
+  max-height: 42px;
+  opacity: 0.9;
+}
+
+/* Footer（加重但不搶戲） */
+.sub-footer {
+  background: #e1e6ec;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #444;
+  border-top: 1px solid #cfd6dd;
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- 子頁標題 -->
-  <div class="hero">
-    <h1>氣候資料與風險評估資源彙整</h1>
-    <p>Climate Data & Risk Assessment Resources</p>
-  </div>
+<!-- 標題 -->
+<div class="hero">
+  <h1>氣候資料與風險評估資源索引</h1>
+  <p>Climate Data and Risk Assessment Index</p>
+</div>
 
-  <!-- 內容區 -->
+<!-- 內容 -->
+<div class="main-content">
   <div class="card-container">
 
     <!-- TCCIP -->
@@ -130,7 +141,7 @@
 
     <!-- DRA -->
     <div class="card">
-      <h3>DRA</h3>
+      <h3>Dr.A</h3>
       <p>災害風險分析與管理平台</p>
       <ul>
         <li>災害潛勢分析</li>
@@ -143,7 +154,7 @@
       <img src="images/dra.png" alt="DRA Logo">
     </div>
 
-    <!-- 政策頁 -->
+    <!-- 政策 -->
     <div class="card">
       <h3>氣候變遷因應政策</h3>
       <p>國家氣候變遷政策與推動方向</p>
@@ -159,11 +170,12 @@
     </div>
 
   </div>
+</div>
 
-  <!-- 子頁維護單位說明 -->
-  <div class="sub-footer">
-    本專區資料彙整與維護單位：國立臺東大學防災科技資訊中心
-  </div>
+<!-- 維護單位 -->
+<div class="sub-footer">
+  本專區資料彙整與維護單位：國立臺東大學防災科技資訊中心
+</div>
 
 </body>
 </html>

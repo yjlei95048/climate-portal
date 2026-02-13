@@ -120,10 +120,13 @@ body {
 
 /* Logo 保持原位置 */
 .card img {
-   margin-top: 18px;
+  margin-top: 18px;
+  align-self: flex-start;   /* ← 這行讓 logo 靠左 */
+  height: auto;
   max-height: 40px;
   width: auto;
   object-fit: contain;
+  opacity: 0.85;
 }
 
 /* Footer */

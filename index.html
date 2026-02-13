@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>氣候資料與風險評估資源索引</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
 
 body {
@@ -12,39 +14,38 @@ body {
   font-family: "Noto Sans TC", Arial, sans-serif;
   background-color: #f2f6fa;
   color: #333;
-
-  /* 讓 footer 貼底 */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* 標題列 */
+/* Hero */
 .hero {
-  background: #2c4f73;
+  background: linear-gradient(135deg, #2c4f73, #1f3a56);
   color: white;
-  padding: 22px 40px;
+  padding: 28px 40px;
   text-align: left;
 }
 
 .hero h1 {
-  font-size: 22px;
+  font-size: 24px;
   margin: 0;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .hero p {
-  font-size: 16px;
-  margin-top: 6px;
-  opacity: 0.85;
+  font-size: 18px;
+  margin-top: 8px;
+  opacity: 0.9;
 }
 
-/* 內容撐滿 */
+/* 主內容撐滿 */
 .main-content {
   flex: 1;
 }
 
-/* 卡片區 */
+/* 卡片容器 */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -59,47 +60,72 @@ body {
   background: #ffffff;
   padding: 34px;
   border: 1px solid #e3e7eb;
-  border-radius: 6px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.2s ease;
 }
 
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* 卡片標題 */
 .card h3 {
-  font-size: 19px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  margin-bottom: 6px;
   font-weight: 600;
+  color: #2c4f73;
 }
 
+/* 內容文字 */
 .card p {
-  font-size: 15px;
-  margin: 6px 0 14px 0;
+  font-size: 18px;
+  margin: 2px 0 14px 0;
   line-height: 1.6;
 }
 
 .card ul {
   padding-left: 18px;
   margin: 0 0 14px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .card li {
   margin-bottom: 6px;
 }
 
-/* 索引型連結 */
+/* 前往平台按鈕（靠右＋自動貼底） */
 .card a {
-  display: inline-block;
-  margin-top: 10px;
+  margin-top: auto;
+  align-self: flex-end;
+
+  padding: 6px 16px;
+  border: 1px solid #2c4f73;
+  border-radius: 4px;
+
   font-size: 14px;
   color: #2c4f73;
-  text-decoration: underline;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
 }
 
+.card a:hover {
+  background: #2c4f73;
+  color: white;
+}
+
+/* Logo 保持原位置 */
 .card img {
   margin-top: 18px;
   max-height: 42px;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
-/* Footer（加重但不搶戲） */
+/* Footer */
 .sub-footer {
   background: #e1e6ec;
   text-align: center;
@@ -114,17 +140,14 @@ body {
 
 <body>
 
-<!-- 標題 -->
 <div class="hero">
   <h1>氣候資料與風險評估資源索引</h1>
   <p>Climate Data & Risk Assessment Index</p>
 </div>
 
-<!-- 內容 -->
 <div class="main-content">
   <div class="card-container">
 
-    <!-- TCCIP -->
     <div class="card">
       <h3>TCCIP</h3>
       <p>臺灣氣候變遷推估資訊與應用平台</p>
@@ -133,13 +156,10 @@ body {
         <li>空間圖資查詢</li>
         <li>風險評估應用</li>
       </ul>
-      <a href="https://tccip.ncdr.nat.gov.tw/" target="_blank">
-        前往平台
-      </a><br>
+      <a href="https://tccip.ncdr.nat.gov.tw/" target="_blank">前往平台</a>
       <img src="images/tccip.png" alt="TCCIP Logo">
     </div>
 
-    <!-- DRA -->
     <div class="card">
       <h3>Dr.A</h3>
       <p>災害風險分析與管理平台</p>
@@ -148,13 +168,10 @@ body {
         <li>風險評估模型</li>
         <li>決策支援資訊</li>
       </ul>
-      <a href="https://dra.ncdr.nat.gov.tw/" target="_blank">
-        前往平台
-      </a><br>
+      <a href="https://dra.ncdr.nat.gov.tw/" target="_blank">前往平台</a>
       <img src="images/dra.png" alt="DRA Logo">
     </div>
 
-    <!-- 政策 -->
     <div class="card">
       <h3>氣候變遷因應政策</h3>
       <p>國家氣候變遷政策與推動方向</p>
@@ -163,16 +180,13 @@ body {
         <li>行動計畫</li>
         <li>相關法規</li>
       </ul>
-      <a href="https://www.cca.gov.tw/affairs/response-policies/1999.html" target="_blank">
-        前往政策頁
-      </a><br>
+      <a href="https://www.cca.gov.tw/affairs/response-policies/1999.html" target="_blank">前往政策頁</a>
       <img src="images/cca.png" alt="CCA Logo">
     </div>
 
   </div>
 </div>
 
-<!-- 維護單位 -->
 <div class="sub-footer">
   本專區資料彙整與維護單位：國立臺東大學防災科技資訊中心
 </div>
